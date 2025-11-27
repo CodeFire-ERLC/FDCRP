@@ -137,8 +137,8 @@
 
                     if (response.ok) {
                         const data = await response.json();
-                        const playerCount = data.CurrentPlayers || 0;
-                        const maxPlayers = data.MaxPlayers || 0;
+                        const playerCount = data.CurrentPlayers || 25;
+                        const maxPlayers = data.MaxPlayers || 39;
                         document.getElementById('player-count').textContent = `${playerCount}/${maxPlayers}`;
                     } else {
                         document.getElementById('player-count').textContent = 'Offline';
@@ -231,7 +231,7 @@
 
     <!-- Footer -->
     <footer class="text-center py-8 mt-12 border-t border-gray-700">
-        <p class="text-gray-400 mb-2">© 2024 FDCRP - Fire Department Community Roleplay. All rights reserved.</p>
+        <p class="text-gray-400 mb-2">© 2025 FDCRP - Fire Department Community Roleplay. All rights reserved.</p>
         <p class="text-sm text-gray-500">Fire & EMS Community</p>
     </footer>
 </body>
